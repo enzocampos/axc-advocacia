@@ -527,10 +527,9 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
           </div>
         </div>
 
-        {m
-          ? <IGMarquee k={k} cardWidth={200} gap={12} speed={40} />
-          : <div style={{ ...wrap }}><behold-widget feed-id="vmHOHlWaJVbHeQqydX7g" style={{ display: 'block', marginBottom: 32 }} /></div>
-        }
+        <div style={{ ...wrap }}>
+          <behold-widget feed-id="vmHOHlWaJVbHeQqydX7g" style={{ display: 'block', marginBottom: 32 }} />
+        </div>
 
         {!m && (
           <div style={{ ...wrap }}>
