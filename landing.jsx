@@ -38,6 +38,7 @@ const hl = {
 
 const ctaTxt   = 'Falar com o advogado no WhatsApp';
 const ctaShort = 'Falar no WhatsApp';
+const waUrl    = 'https://wa.me/5519991949837?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20invent%C3%A1rio';
 
 const numbers = [
   { n: '15+',       l: 'Anos de atuação em direito sucessório' },
@@ -129,13 +130,13 @@ function SectionNumber({ x, total = '06' }) {
   );
 }
 
-function GoldButton({ children, size = 'md', secondary = false, fullWidth = false, style }) {
+function GoldButton({ children, size = 'md', secondary = false, fullWidth = false, style, href }) {
   const padY = size === 'lg' ? 22 : 18;
   const padX = size === 'lg' ? 36 : 30;
   const fs   = size === 'lg' ? 16 : 14;
   if (secondary) {
     return (
-      <a href="#" style={{
+      <a href={href || '#'} style={{
         display: 'inline-flex', alignItems: 'center', gap: 12,
         padding: `${padY}px ${padX}px`,
         background: 'transparent', border: `1px solid ${k.lineHi}`,
@@ -148,7 +149,7 @@ function GoldButton({ children, size = 'md', secondary = false, fullWidth = fals
     );
   }
   return (
-    <a href="#" style={{
+    <a href={href || waUrl} target="_blank" rel="noopener noreferrer" style={{
       display: 'inline-flex', alignItems: 'center', gap: 14,
       padding: `${padY}px ${padX}px`,
       background: k.accent, color: '#13100B',

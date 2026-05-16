@@ -24,7 +24,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
               }}>{t}</a>
             ))}
           </nav>
-          <a href="#" style={{
+          <a href="https://wa.me/5519991949837?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20meu%20invent%C3%A1rio" target="_blank" rel="noopener noreferrer" style={{
             display: 'inline-flex', alignItems: 'center', gap: 10,
             padding: '12px 18px', border: `1px solid ${k.lineHi}`,
             color: k.text, textDecoration: 'none', fontSize: 13, fontWeight: 500,
@@ -77,7 +77,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
 
             {/* CTAs */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexWrap: 'wrap' }}>
-              <GoldButton k={k} size="lg" secondary>Como funciona</GoldButton>
+              <GoldButton k={k} size="lg" secondary href="#dor">Como funciona</GoldButton>
               <GoldButton k={k} size="lg">{ctaTxt}</GoldButton>
             </div>
 
@@ -547,7 +547,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
                 <span style={{
                   fontFamily: k.fontMono, fontSize: 11, color: k.accent,
                   letterSpacing: '0.2em', textTransform: 'uppercase',
-                }}>@axc.advocacia · Instagram</span>
+                }}>@andersoncampos.advogado · Instagram</span>
               </div>
               <h2 style={{
                 fontFamily: k.fontDisplay, fontSize: k.h2, fontWeight: 500, lineHeight: 1.05,
@@ -556,7 +556,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
                 Conteúdo sobre <span style={{ color: k.accent, fontStyle: 'italic' }}>inventário e sucessões</span>, em linguagem que dá pra entender.
               </h2>
             </div>
-            <a href="https://www.instagram.com/axc.advocacia/" target="_blank" rel="noopener noreferrer" style={{
+            <a href="https://www.instagram.com/andersoncampos.advogado/" target="_blank" rel="noopener noreferrer" style={{
               flexShrink: 0, display: 'inline-flex', alignItems: 'center', gap: 12,
               padding: '14px 22px', border: `1px solid ${k.lineHi}`, color: k.text,
               textDecoration: 'none', fontFamily: k.fontBody, fontSize: 13, fontWeight: 500,
@@ -569,8 +569,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
             </a>
           </div>
 
-          {/* Feed real via Behold.so — substituir BEHOLD_FEED_ID pelo ID gerado no painel */}
-          <behold-widget feed-id="BEHOLD_FEED_ID" style={{ display: 'block', marginBottom: 32 }} />
+          <behold-widget feed-id="vmHOHlWaJVbHeQqydX7g" style={{ display: 'block', marginBottom: 32 }} />
 
           <div style={{
             marginTop: 32, display: 'flex', justifyContent: 'space-between', alignItems: 'center',

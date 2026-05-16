@@ -106,7 +106,7 @@ function LandingMobile({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
           {/* CTA */}
           <div style={{ marginTop: 36, display: 'flex', flexDirection: 'column', gap: 12 }}>
             <GoldButton k={k} fullWidth size="lg">{ctaTxt}</GoldButton>
-            <GoldButton k={k} fullWidth secondary>Como funciona o atendimento</GoldButton>
+            <GoldButton k={k} fullWidth secondary href="#dor">Como funciona o atendimento</GoldButton>
           </div>
           <div style={{
             marginTop: 18, display: 'flex', flexDirection: 'column', gap: 8,
@@ -577,7 +577,7 @@ function LandingMobile({ k, hl, ctaTxt, ctaShort, numbers, oab, lean }) {
         <IGMarquee k={k} cardWidth={200} gap={12} speed={40} />
 
         <div style={{ ...wrap, marginTop: 24 }}>
-          <a href="#" style={{
+          <a href="https://www.instagram.com/andersoncampos.advogado/" target="_blank" rel="noopener noreferrer" style={{
             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 10,
             padding: '16px 22px', border: `1px solid ${k.lineHi}`, color: k.text,
             textDecoration: 'none', fontFamily: k.fontBody, fontSize: 14, fontWeight: 500,
