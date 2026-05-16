@@ -209,7 +209,7 @@ function Wordmark({ size = 'md' }) {
   const h = size === 'lg' ? 56 : size === 'md' ? 44 : 34;
   return (
     <img
-      src="uploads/Logo_AXCAdvocacia.png"
+      src="/uploads/Logo_AXCAdvocacia.png"
       alt="AXC Advocacia"
       style={{ height: h, width: 'auto', display: 'block' }}
     />

@@ -89,7 +89,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
                 : <span key={i} style={{ display: 'block', ...(i === hl.title.length - 1 ? { color: k.accent, fontStyle: 'italic' } : {}) }}>{line}</span>)}
             </h1>
             <div style={{ marginTop: 36, position: 'relative', width: '100%', aspectRatio: '4 / 5', overflow: 'hidden' }}>
-              <img src="uploads/anderson.jpeg" alt="Dr. Anderson Xavier de Campos"
+              <img src="/uploads/anderson.jpeg" alt="Dr. Anderson Xavier de Campos"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
             </div>
             <div style={{
@@ -148,7 +148,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               </div>
             </div>
             <div style={{ position: 'relative', overflow: 'hidden' }}>
-              <img src="uploads/anderson.jpeg" alt="Dr. Anderson Xavier de Campos"
+              <img src="/uploads/anderson.jpeg" alt="Dr. Anderson Xavier de Campos"
                 style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
               <div style={{
                 position: 'absolute', bottom: 0, left: 0, right: 0, padding: '48px 24px 20px',
