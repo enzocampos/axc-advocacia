@@ -171,18 +171,18 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
         borderTop: `1px solid ${k.line}`,
       }}>
         <div style={{ ...wrap, width: '100%', boxSizing: 'border-box' }}>
-          <div style={{ textAlign: 'center', marginBottom: m ? 32 : 64 }}>
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <div style={{ textAlign: m ? 'left' : 'center', marginBottom: m ? 32 : 64 }}>
+            <div style={{ display: 'flex', justifyContent: m ? 'flex-start' : 'center' }}>
               <SectionNumber x="01" total="06" k={k} />
             </div>
             <h2 style={{
               fontFamily: k.fontDisplay, fontSize: h2Size, fontWeight: 500,
-              lineHeight: 1.05, letterSpacing: '-0.02em', margin: '28px auto 20px',
-              color: k.text, textWrap: 'balance', maxWidth: 760,
+              lineHeight: 1.05, letterSpacing: '-0.02em', margin: m ? '24px 0 18px' : '28px auto 20px',
+              color: k.text, textWrap: 'balance', maxWidth: m ? undefined : 760,
             }}>
               Se você é herdeiro de um inventário <span style={{ color: k.accent, fontStyle: 'italic' }}>que não anda</span>, provavelmente já passou por isso.
             </h2>
-            <p style={{ fontFamily: k.fontBody, fontSize: m ? 14 : 16, color: k.textDim, lineHeight: 1.7, margin: '0 auto', maxWidth: 520 }}>
+            <p style={{ fontFamily: k.fontBody, fontSize: m ? 14 : 16, color: k.textDim, lineHeight: 1.7, margin: m ? 0 : '0 auto', maxWidth: m ? undefined : 520 }}>
               Perder alguém da família já é difícil. Lidar com a partilha dos bens não devia ser ainda pior.
             </p>
           </div>
