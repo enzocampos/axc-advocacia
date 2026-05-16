@@ -441,9 +441,7 @@ function LandingPage({ mobile }) {
         backgroundImage: `radial-gradient(ellipse at 80% -10%, ${k.accentSoft}, transparent 50%), radial-gradient(ellipse at 0% 110%, rgba(120,80,40,0.10), transparent 40%)`,
       }} />
       <div style={{ position: 'relative', zIndex: 2 }}>
-        {mobile
-          ? <LandingMobile k={k} hl={hl} ctaTxt={ctaTxt} ctaShort={ctaShort} numbers={numbers} oab="soft" lean={true} />
-          : <LandingDesktop k={k} hl={hl} ctaTxt={ctaTxt} ctaShort={ctaShort} numbers={numbers} oab="soft" lean={true} />}
+        <LandingDesktop k={k} hl={hl} ctaTxt={ctaTxt} ctaShort={ctaShort} numbers={numbers} oab="soft" lean={true} mobile={mobile} />
       </div>
     </div>
   );
