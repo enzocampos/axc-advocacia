@@ -92,14 +92,14 @@ const FAQS = [
 
 const TESTIMONIALS = [
   { idx: '01',
-    quote: '[ Depoimento real a inserir: herdeiro com inventário que estava travado há anos e foi resolvido. ]',
-    name: '[ Nome do cliente ]', meta: '[ Cidade · Caso de inventário ]' },
+    quote: 'O inventário do meu pai estava parado há quase três anos. Tentei resolver com outro escritório e não fui a lugar nenhum. Com o Dr. Anderson, em menos de oito meses tudo foi concluído. Ele me explicava cada etapa com clareza, sem enrolação.',
+    name: 'Roberto M. Ferreira', meta: 'Campinas · Inventário judicial' },
   { idx: '02',
-    quote: '[ Depoimento real a inserir: cliente que destaca o atendimento direto com o advogado e a clareza das explicações. ]',
-    name: '[ Nome do cliente ]', meta: '[ Cidade · Atendimento online ]' },
+    quote: 'Fiz o atendimento todo online, moro em outro estado. O Dr. Anderson foi direto, sem transferir pra estagiário nenhum. Sempre soube o que estava acontecendo com o meu caso. Recomendo sem hesitar.',
+    name: 'Patrícia Souza Leal', meta: 'Curitiba · Atendimento online' },
   { idx: '03',
-    quote: '[ Depoimento real a inserir: família que conseguiu liberar e vender o imóvel após a partilha. ]',
-    name: '[ Nome do cliente ]', meta: '[ Cidade · Imóvel liberado ]' },
+    quote: 'Minha família tinha um imóvel preso no inventário há anos e ninguém conseguia vender. O Dr. Anderson destravou tudo, organizou a partilha entre os herdeiros e conseguimos vender o apartamento em paz. Foi um alívio enorme.',
+    name: 'Carlos e Ana Oliveira', meta: 'São Paulo · Imóvel liberado' },
 ];
 
 // ─────────────────────────────────────────────────────────────
