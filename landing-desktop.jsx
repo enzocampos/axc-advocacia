@@ -112,17 +112,6 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               <span>· Atendimento direto com o advogado</span>
               <span>· Resposta rápida</span>
             </div>
-            <div style={{
-              marginTop: 40, paddingTop: 24, borderTop: `1px solid ${k.line}`,
-              display: 'flex', flexDirection: 'column', gap: 14,
-            }}>
-              {numbers.map((n, i) => (
-                <div key={i} style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 16 }}>
-                  <span style={{ fontFamily: k.fontMono, fontSize: 10, color: k.textMute, letterSpacing: '0.18em', textTransform: 'uppercase', maxWidth: 220 }}>{n.l}</span>
-                  <span style={{ fontFamily: k.fontDisplay, fontSize: 22, color: k.accent, fontWeight: 500 }}>{n.n}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
       ) : (
