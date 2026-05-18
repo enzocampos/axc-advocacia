@@ -82,7 +82,7 @@ window.SECTION_COPY = {
   solucaoH2italic: 'quase sempre',
   solucaoH2post:   ' tem o mesmo motivo: falta de orientação jurídica no momento certo.',
   solucaoP1: 'Contrato assinado sem revisão. Imóvel comprado sem verificar as pendências. Direito perdido por não saber que existia.',
-  solucaoP2: 'O jeito da AXC é o contrário disso. O Dr. Anderson analisa o caso antes de você assinar qualquer coisa: levanta pendências, revisa contratos, orienta cada etapa e te mantém informado em linguagem que dá pra entender.',
+  solucaoP2: 'O jeito da AXC é o contrário disso. O Dr. Anderson analisa o caso antes de você assinar qualquer coisa: levanta pendências, revisa contratos, orienta cada etapa e te mantém informado em linguagem que dá para entender.',
   solucaoP3pre: 'É essa orientação antecipada que evita prejuízos — e ',
   solucaoComo: [
     ['01', 'Diagnóstico',   'Conversa inicial sem compromisso. O Dr. Anderson entende seu caso, identifica os riscos e te explica os próximos passos com clareza.'],
@@ -95,7 +95,7 @@ window.SECTION_COPY = {
   ctaP:        'Uma conversa. Sem custo, sem compromisso. Só você, o Dr. Anderson e um diagnóstico claro do que está em jogo.',
   igH2pre:    'Conteúdo sobre',
   igH2italic: 'direito imobiliário',
-  igH2post:   ', em linguagem que dá pra entender.',
+  igH2post:   ', em linguagem que dá para entender.',
   footerTagline:  'Contratos imobiliários, due diligence e regularização de imóveis.',
   footerTaglineD: 'Advocacia especializada em direito imobiliário: contratos, due diligence, regularização e ações relacionadas a imóveis. Atendimento direto com o Dr. Anderson Xavier de Campos.',
   footerAtuacao:  ['Contratos imobiliários', 'Due diligence', 'Regularização de imóveis', 'Ações de despejo'],

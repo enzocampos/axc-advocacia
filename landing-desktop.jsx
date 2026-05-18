@@ -417,7 +417,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               Perguntas <span style={{ color: k.accent, fontStyle: 'italic' }}>antes da conversa.</span>
             </h2>
             <p style={{ margin: m ? '0 0 24px' : 0, fontFamily: k.fontBody, fontSize: m ? 14 : 15, color: k.textDim, lineHeight: 1.7, maxWidth: m ? undefined : 320 }}>
-              Se a sua dúvida não estiver aqui, traga ela na primeira conversa. É exatamente pra isso que ela serve.
+              Se a sua dúvida não estiver aqui, traga ela na primeira conversa. É exatamente para isso que ela serve.
             </p>
           </div>
           <div>
