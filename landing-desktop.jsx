@@ -279,6 +279,87 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
         </div>
       </section>
 
+      {/* ──────────── SOBRE ──────────── */}
+      <section style={{ padding: `${py}px 0`, borderTop: `1px solid ${k.line}` }}>
+        <div style={{ ...wrap, width: '100%', boxSizing: 'border-box' }}>
+          {m ? (
+            <>
+              <div style={{ position: 'relative', width: '100%', aspectRatio: '4 / 3', overflow: 'hidden', marginBottom: 28 }}>
+                <img src="/uploads/anderson-escritorio.jpeg" alt="Dr. Anderson Xavier de Campos"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
+              </div>
+              <div>
+                <MonoLabel color={k.accent}>O advogado</MonoLabel>
+                <h2 style={{
+                  fontFamily: k.fontDisplay, fontSize: k.h2m, fontWeight: 500,
+                  lineHeight: 1.05, letterSpacing: '-0.02em', margin: '20px 0 20px', color: k.text,
+                }}>
+                  Dr. Anderson <span style={{ color: k.accent, fontStyle: 'italic' }}>Xavier de Campos</span>
+                </h2>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 14, fontFamily: k.fontBody, fontSize: 14, color: k.textDim, lineHeight: 1.7 }}>
+                  <p style={{ margin: 0 }}>Advogado inscrito na OAB/SP, com mais de 15 anos de atuação dedicada ao direito sucessório e imobiliário. Atende diretamente cada cliente — sem repassar para estagiários.</p>
+                  <p style={{ margin: 0 }}>Formado em Direito, com especialização nas áreas de inventário, partilha de bens e contratos imobiliários. Baseado em Louveira/SP, com atendimento online para todo o Brasil.</p>
+                </div>
+                <div style={{ marginTop: 28, display: 'flex', flexDirection: 'column', gap: 10 }}>
+                  {[
+                    ['OAB/SP', 'Inscrito e regularmente habilitado'],
+                    ['15+ anos', 'De experiência em direito sucessório e imobiliário'],
+                    ['Atendimento direto', 'Você fala com o advogado, não com estagiário'],
+                  ].map(([label, desc]) => (
+                    <div key={label} style={{ display: 'flex', gap: 14, alignItems: 'flex-start', padding: '14px 0', borderTop: `1px solid ${k.line}` }}>
+                      <span style={{ fontFamily: k.fontMono, fontSize: 9, color: k.accent, letterSpacing: '0.15em', textTransform: 'uppercase', paddingTop: 3, minWidth: 80 }}>{label}</span>
+                      <span style={{ fontFamily: k.fontBody, fontSize: 13, color: k.textDim, lineHeight: 1.5 }}>{desc}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </>
+          ) : (
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.1fr', gap: 80, alignItems: 'center' }}>
+              <div style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3 / 4' }}>
+                <img src="/uploads/anderson-escritorio.jpeg" alt="Dr. Anderson Xavier de Campos"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block' }} />
+                <div style={{
+                  position: 'absolute', bottom: 0, left: 0, right: 0, padding: '40px 28px 20px',
+                  background: 'linear-gradient(transparent, rgba(14,11,7,0.85))',
+                  fontFamily: k.fontMono, fontSize: 10, letterSpacing: '0.2em',
+                  textTransform: 'uppercase', color: k.textMute,
+                  display: 'flex', justifyContent: 'space-between',
+                }}>
+                  <span>Dr. Anderson X. de Campos</span><span>OAB / SP</span>
+                </div>
+              </div>
+              <div>
+                <MonoLabel color={k.accent}>O advogado</MonoLabel>
+                <h2 style={{
+                  fontFamily: k.fontDisplay, fontSize: k.h2, fontWeight: 500,
+                  lineHeight: 1.05, letterSpacing: '-0.02em', margin: '24px 0 32px', color: k.text,
+                }}>
+                  Dr. Anderson <span style={{ color: k.accent, fontStyle: 'italic' }}>Xavier de Campos</span>
+                </h2>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 18, fontFamily: k.fontBody, fontSize: 16, color: k.textDim, lineHeight: 1.7 }}>
+                  <p style={{ margin: 0 }}>Advogado inscrito na OAB/SP, com mais de 15 anos de atuação dedicada ao direito sucessório e imobiliário. Atende diretamente cada cliente — sem repassar para estagiários ou intermediários.</p>
+                  <p style={{ margin: 0 }}>Formado em Direito, com especialização nas áreas de inventário, partilha de bens e contratos imobiliários. Baseado em Louveira/SP, com atendimento online para todo o Brasil.</p>
+                </div>
+                <div style={{ marginTop: 40, display: 'flex', flexDirection: 'column', gap: 0 }}>
+                  {[
+                    ['OAB/SP', 'Inscrito e regularmente habilitado'],
+                    ['15+ anos', 'De experiência em direito sucessório e imobiliário'],
+                    ['Atendimento direto', 'Você fala com o advogado, não com estagiário'],
+                    ['Online · Brasil', 'Atendimento remoto para qualquer cidade do país'],
+                  ].map(([label, desc]) => (
+                    <div key={label} style={{ display: 'grid', gridTemplateColumns: '160px 1fr', gap: 24, alignItems: 'baseline', padding: '18px 0', borderTop: `1px solid ${k.line}` }}>
+                      <span style={{ fontFamily: k.fontMono, fontSize: 10, color: k.accent, letterSpacing: '0.15em', textTransform: 'uppercase' }}>{label}</span>
+                      <span style={{ fontFamily: k.fontBody, fontSize: 14, color: k.textDim, lineHeight: 1.5 }}>{desc}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
       {/* ──────────── BENEFÍCIOS ──────────── */}
       <section style={{
         padding: `${py}px 0`, background: k.bg2,
