@@ -447,6 +447,35 @@ function LandingPage({ mobile }) {
   );
 }
 
+const SECTION_COPY = {
+  dorH2pre:    'Se você é herdeiro de um inventário',
+  dorH2italic: 'que não anda',
+  dorH2post:   ', provavelmente já passou por isso.',
+  dorSub:      'Perder alguém da família já é difícil. Lidar com a partilha dos bens não devia ser ainda pior.',
+  midCtaEyebrow: 'Pare de remoer',
+  solucaoH2pre:    'Inventário travado',
+  solucaoH2italic: 'quase sempre',
+  solucaoH2post:   ' tem o mesmo motivo: falta de condução firme.',
+  solucaoP1: 'Documento que não foi pedido na hora certa. Prazo perdido. Etapa que ficou esperando alguém tomar a frente.',
+  solucaoP2: 'O jeito da AXC é o contrário disso. O Dr. Anderson assume a condução do caso do começo ao fim: levanta o que falta, organiza a documentação, conduz cada etapa e mantém você informado em linguagem que dá pra entender.',
+  solucaoP3pre: 'É essa condução ativa que faz o inventário voltar a andar — e ',
+  solucaoComo: [
+    ['01', 'Diagnóstico',    'Conversa inicial sem compromisso. O Dr. Anderson entende seu caso, identifica o que está travando e te explica os próximos passos.'],
+    ['02', 'Levantamento',   'Documentação revisada, certidões pedidas na hora certa, ITCMD apurado. Nada fica esperando alguém puxar.'],
+    ['03', 'Condução ativa', 'Cada etapa conduzida pessoalmente, com prazos monitorados. Você é informado em linguagem clara, sem juridiquês.'],
+  ],
+  resultadosSub: 'Cada inventário tem suas particularidades. O que se repete é o método: condução firme, comunicação clara e disposição pra resolver — não pra empurrar com a barriga.',
+  ctaH2pre:    'Seu inventário não vai',
+  ctaH2italic: 'se resolver sozinho.',
+  ctaP:        'Uma conversa. Sem custo, sem compromisso. Só você, o Dr. Anderson e um plano claro pros próximos passos.',
+  igH2pre:    'Conteúdo sobre',
+  igH2italic: 'inventário e sucessões',
+  igH2post:   ', em linguagem que dá pra entender.',
+  footerTagline:    'Inventário, partilha de bens e direito sucessório.',
+  footerTaglineD:   'Advocacia especializada em inventário, partilha de bens e direito sucessório. Atendimento direto com o Dr. Anderson Xavier de Campos.',
+  footerAtuacao:    ['Inventário judicial', 'Inventário extrajudicial', 'Partilha de bens', 'Sucessões'],
+};
+
 // exports para landing-desktop.jsx e landing-mobile.jsx
 window.k            = k;
 window.hl           = hl;
@@ -458,7 +487,8 @@ window.BENEFITS     = BENEFITS;
 window.OBJECTIONS   = OBJECTIONS;
 window.FAQS         = FAQS;
 window.TESTIMONIALS = TESTIMONIALS;
-window.IG_POSTS     = IG_POSTS;
+window.IG_POSTS       = IG_POSTS;
+window.SECTION_COPY   = SECTION_COPY;
 window.MonoLabel        = MonoLabel;
 window.SectionNumber    = SectionNumber;
 window.GoldButton       = GoldButton;

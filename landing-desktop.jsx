@@ -180,10 +180,10 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               lineHeight: 1.05, letterSpacing: '-0.02em', margin: m ? '24px 0 18px' : '28px auto 20px',
               color: k.text, textWrap: 'balance', maxWidth: m ? undefined : 760,
             }}>
-              Se você é herdeiro de um inventário <span style={{ color: k.accent, fontStyle: 'italic' }}>que não anda</span>, provavelmente já passou por isso.
+              {SECTION_COPY.dorH2pre} <span style={{ color: k.accent, fontStyle: 'italic' }}>{SECTION_COPY.dorH2italic}</span>{SECTION_COPY.dorH2post}
             </h2>
             <p style={{ fontFamily: k.fontBody, fontSize: m ? 14 : 16, color: k.textDim, lineHeight: 1.7, margin: m ? 0 : '0 auto', maxWidth: m ? undefined : 520 }}>
-              Perder alguém da família já é difícil. Lidar com a partilha dos bens não devia ser ainda pior.
+              {SECTION_COPY.dorSub}
             </p>
           </div>
           {m ? (
@@ -215,13 +215,13 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
       {/* ──────────── MID CTA 1 ──────────── */}
       {m ? (
         <MidCTAMobile
-          k={k} eyebrow="Pare de remoer"
+          k={k} eyebrow={SECTION_COPY.midCtaEyebrow}
           title={<>Se você se reconheceu em três ou mais itens, <span style={{ color: k.accent, fontStyle: 'italic' }}>está na hora.</span></>}
           ctaText={ctaTxt}
         />
       ) : (
         <MidCTA
-          k={k} variant="band" eyebrow="Pare de remoer"
+          k={k} variant="band" eyebrow={SECTION_COPY.midCtaEyebrow}
           title={<>Se você se reconheceu em três ou mais itens dessa lista, <span style={{ color: k.accent, fontStyle: 'italic' }}>está na hora de conversar.</span></>}
           ctaText={ctaTxt}
         />
@@ -244,16 +244,16 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
                 fontFamily: k.fontDisplay, fontSize: h2Size, fontWeight: 500,
                 lineHeight: 1.05, letterSpacing: '-0.02em', margin: '0 0 28px', color: k.text, textWrap: 'balance',
               }}>
-                Inventário travado <span style={{ color: k.accent, fontStyle: 'italic' }}>quase sempre</span> tem o mesmo motivo: falta de condução firme.
+                {SECTION_COPY.solucaoH2pre} <span style={{ color: k.accent, fontStyle: 'italic' }}>{SECTION_COPY.solucaoH2italic}</span>{SECTION_COPY.solucaoH2post}
               </h2>
               <div style={{
                 fontFamily: k.fontBody, fontSize: m ? 15 : 17, lineHeight: 1.65,
                 color: k.textDim, display: 'flex', flexDirection: 'column', gap: m ? 14 : 18,
               }}>
-                <p style={{ margin: 0 }}>Documento que não foi pedido na hora certa. Prazo perdido. Etapa que ficou esperando alguém tomar a frente.</p>
-                <p style={{ margin: 0 }}>O jeito da AXC é o contrário disso. O Dr. Anderson assume a condução do caso do começo ao fim: levanta o que falta, organiza a documentação, conduz cada etapa e mantém você informado em linguagem que dá pra entender.</p>
+                <p style={{ margin: 0 }}>{SECTION_COPY.solucaoP1}</p>
+                <p style={{ margin: 0 }}>{SECTION_COPY.solucaoP2}</p>
                 <p style={{ margin: 0, color: k.text }}>
-                  É essa condução ativa que faz o inventário voltar a andar — e <span>o escritório mantém um <b style={{ color: k.accent }}>histórico consistente</b> de resultados favoráveis aos clientes.</span>
+                  {SECTION_COPY.solucaoP3pre}<span>o escritório mantém um <b style={{ color: k.accent }}>histórico consistente</b> de resultados favoráveis aos clientes.</span>
                 </p>
               </div>
             </div>
@@ -262,11 +262,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               display: 'flex', flexDirection: 'column', gap: m ? 18 : 24,
             }}>
               <MonoLabel color={k.accent}>Como conduzimos</MonoLabel>
-              {[
-                ['01','Diagnóstico','Conversa inicial sem compromisso. O Dr. Anderson entende seu caso, identifica o que está travando e te explica os próximos passos.'],
-                ['02','Levantamento','Documentação revisada, certidões pedidas na hora certa, ITCMD apurado. Nada fica esperando alguém puxar.'],
-                ['03','Condução ativa','Cada etapa conduzida pessoalmente, com prazos monitorados. Você é informado em linguagem clara, sem juridiquês.'],
-              ].map(([n, t, d], i) => (
+              {SECTION_COPY.solucaoComo.map(([n, t, d], i) => (
                 <div key={n} style={{
                   display: 'grid', gridTemplateColumns: m ? '32px 1fr' : '40px 1fr', gap: m ? 14 : 18,
                   paddingBottom: i < 2 ? (m ? 16 : 24) : 0, borderBottom: i < 2 ? `1px solid ${k.line}` : 'none',
@@ -339,7 +335,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               Mais de uma década dedicada exclusivamente a famílias <span style={{ color: k.accent, fontStyle: 'italic' }}>como a sua.</span>
             </h2>
             <p style={{ fontFamily: k.fontBody, fontSize: m ? 14 : 15, color: k.textDim, lineHeight: 1.65, margin: 0, paddingTop: m ? 0 : 12 }}>
-              Cada inventário tem suas particularidades. O que se repete é o método: condução firme, comunicação clara e disposição pra resolver — não pra empurrar com a barriga.
+              {SECTION_COPY.resultadosSub}
             </p>
           </div>
           <div style={{
@@ -447,14 +443,14 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
             letterSpacing: '-0.025em', margin: m ? '20px 0' : '32px auto 28px',
             maxWidth: 920, color: k.text, textWrap: 'balance',
           }}>
-            Seu inventário não vai <span style={{ color: k.accent, fontStyle: 'italic' }}>se resolver sozinho.</span>
+            {SECTION_COPY.ctaH2pre} <span style={{ color: k.accent, fontStyle: 'italic' }}>{SECTION_COPY.ctaH2italic}</span>
             {!m && <><br />Mas pode parar de ser um peso.</>}
           </h2>
           <p style={{
             margin: m ? '0 0 32px' : '0 auto 48px', maxWidth: 580,
             fontFamily: k.fontBody, fontSize: m ? 16 : 18, color: k.textDim, lineHeight: 1.6,
           }}>
-            Uma conversa. Sem custo, sem compromisso. Só você, o Dr. Anderson e um plano claro pros próximos passos.
+            {SECTION_COPY.ctaP}
           </p>
           {m
             ? <GoldButton fullWidth size="lg">{ctaTxt}</GoldButton>
@@ -499,7 +495,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
                 fontFamily: k.fontDisplay, fontSize: h2Size, fontWeight: 500, lineHeight: 1.05,
                 letterSpacing: '-0.02em', margin: 0, color: k.text, textWrap: 'balance',
               }}>
-                Conteúdo sobre <span style={{ color: k.accent, fontStyle: 'italic' }}>inventário e sucessões</span>, em linguagem que dá pra entender.
+                {SECTION_COPY.igH2pre} <span style={{ color: k.accent, fontStyle: 'italic' }}>{SECTION_COPY.igH2italic}</span>{SECTION_COPY.igH2post}
               </h2>
             </div>
             <a href="https://www.instagram.com/andersoncampos.advogado/" target="_blank" rel="noopener noreferrer" style={{
@@ -535,7 +531,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
           <div style={wrap}>
             <Wordmark k={k} size="md" />
             <p style={{ marginTop: 14, fontFamily: k.fontBody, fontSize: 13, color: k.textDim, lineHeight: 1.6 }}>
-              Inventário, partilha de bens e direito sucessório.
+              {SECTION_COPY.footerTagline}
             </p>
             <div style={{ marginTop: 24, display: 'flex', flexDirection: 'column', gap: 8, fontFamily: k.fontBody, fontSize: 13, color: k.text }}>
               <span>WhatsApp · direto com o advogado</span>
@@ -559,7 +555,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               <div>
                 <Wordmark k={k} size="lg" />
                 <p style={{ marginTop: 20, fontFamily: k.fontBody, fontSize: 14, color: k.textDim, lineHeight: 1.6, maxWidth: 320 }}>
-                  Advocacia especializada em inventário, partilha de bens e direito sucessório. Atendimento direto com o Dr. Anderson Xavier de Campos.
+                  {SECTION_COPY.footerTaglineD}
                 </p>
               </div>
               <div>
@@ -573,10 +569,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
               <div>
                 <MonoLabel color={k.textMute}>Atuação</MonoLabel>
                 <ul style={{ listStyle: 'none', padding: 0, margin: '20px 0 0', display: 'flex', flexDirection: 'column', gap: 10, fontFamily: k.fontBody, fontSize: 14, color: k.textDim }}>
-                  <li>Inventário judicial</li>
-                  <li>Inventário extrajudicial</li>
-                  <li>Partilha de bens</li>
-                  <li>Sucessões</li>
+                  {SECTION_COPY.footerAtuacao.map((item, i) => <li key={i}>{item}</li>)}
                 </ul>
               </div>
               <div>

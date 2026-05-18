@@ -72,6 +72,35 @@ window.TESTIMONIALS = [
     name: 'Família Oliveira', meta: 'Louveira · Regularização de imóvel' },
 ];
 
+window.SECTION_COPY = {
+  dorH2pre:    'Se você tem um problema com imóvel,',
+  dorH2italic: 'não está sozinho',
+  dorH2post:   ' nessa situação.',
+  dorSub:      'Negócios imobiliários envolvem valores altos e riscos jurídicos que nem sempre são visíveis. Uma orientação certa muda o resultado.',
+  midCtaEyebrow: 'Não espere o problema crescer',
+  solucaoH2pre:    'Problema imobiliário',
+  solucaoH2italic: 'quase sempre',
+  solucaoH2post:   ' tem o mesmo motivo: falta de orientação jurídica no momento certo.',
+  solucaoP1: 'Contrato assinado sem revisão. Imóvel comprado sem verificar as pendências. Direito perdido por não saber que existia.',
+  solucaoP2: 'O jeito da AXC é o contrário disso. O Dr. Anderson analisa o caso antes de você assinar qualquer coisa: levanta pendências, revisa contratos, orienta cada etapa e te mantém informado em linguagem que dá pra entender.',
+  solucaoP3pre: 'É essa orientação antecipada que evita prejuízos — e ',
+  solucaoComo: [
+    ['01', 'Diagnóstico',   'Conversa inicial sem compromisso. O Dr. Anderson entende seu caso, identifica os riscos e te explica os próximos passos com clareza.'],
+    ['02', 'Due diligence', 'Verificação completa da situação jurídica do imóvel: dívidas, ônus, restrições, histórico. Tudo levantado antes de você assinar.'],
+    ['03', 'Condução ativa','Revisão ou redação de contratos, acompanhamento de escritura, ação de despejo — cada etapa conduzida pessoalmente, sem enrolação.'],
+  ],
+  resultadosSub: 'Cada caso imobiliário tem suas particularidades. O que se repete é o método: orientação firme antes de assinar, condução clara quando algo dá errado.',
+  ctaH2pre:    'Seu problema imobiliário não vai',
+  ctaH2italic: 'se resolver sozinho.',
+  ctaP:        'Uma conversa. Sem custo, sem compromisso. Só você, o Dr. Anderson e um diagnóstico claro do que está em jogo.',
+  igH2pre:    'Conteúdo sobre',
+  igH2italic: 'direito imobiliário',
+  igH2post:   ', em linguagem que dá pra entender.',
+  footerTagline:  'Contratos imobiliários, due diligence e regularização de imóveis.',
+  footerTaglineD: 'Advocacia especializada em direito imobiliário: contratos, due diligence, regularização e ações relacionadas a imóveis. Atendimento direto com o Dr. Anderson Xavier de Campos.',
+  footerAtuacao:  ['Contratos imobiliários', 'Due diligence', 'Regularização de imóveis', 'Ações de despejo'],
+};
+
 // ── App ────────────────────────────────────────────────────────
 
 function ImobApp() {
