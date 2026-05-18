@@ -166,7 +166,7 @@ function Homepage({ mobile: m }) {
               fontFamily: k.fontDisplay, fontSize: m ? 32 : 48, fontWeight: 500,
               lineHeight: 1.05, letterSpacing: '-0.02em', margin: '20px 0 0', color: k.text,
             }}>
-              Em que posso <span style={{ color: k.accent, fontStyle: 'italic' }}>ajudar você</span>
+              Como posso <span style={{ color: k.accent, fontStyle: 'italic' }}>ajudar você</span>
             </h2>
           </div>
 
