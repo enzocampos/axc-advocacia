@@ -17,7 +17,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
           borderBottom: `1px solid ${k.line}`,
           display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         }}>
-          <Wordmark k={k} size="sm" />
+          <a href="/" style={{ textDecoration: 'none', display: 'flex' }}><Wordmark k={k} size="sm" /></a>
           <button onClick={() => setNavOpen(o => !o)} style={{
             background: 'transparent', border: `1px solid ${k.lineHi}`,
             width: 40, height: 40, color: k.text, display: 'flex',
@@ -51,7 +51,7 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
           background: 'linear-gradient(to bottom, rgba(14,11,7,0.92) 0%, rgba(14,11,7,0.6) 60%, transparent 100%)',
         }}>
           <div style={{ ...wrap, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-            <Wordmark k={k} size="md" />
+            <a href="/" style={{ textDecoration: 'none', display: 'flex' }}><Wordmark k={k} size="md" /></a>
             <nav style={{ display: 'flex', gap: 36 }}>
               {[['A dor','#dor'],['Solução','#solucao'],['Resultados','#resultados'],['Perguntas','#faq']].map(([t,h]) => (
                 <a key={t} href={h} style={{
