@@ -453,6 +453,8 @@ const SECTION_COPY = {
   dorH2post:   ', provavelmente já passou por isso.',
   dorSub:      'Perder alguém da família já é difícil. Lidar com a partilha dos bens não devia ser ainda pior.',
   midCtaEyebrow: 'Pare de remoer',
+  midCtaTitle:        'Se algum desses itens descreveu a sua situação,',
+  midCtaTitleItalic:  'já é hora de conversar.',
   solucaoH2pre:    'Inventário travado',
   solucaoH2italic: 'quase sempre',
   solucaoH2post:   ' tem o mesmo motivo: falta de condução firme.',

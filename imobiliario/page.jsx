@@ -78,6 +78,8 @@ window.SECTION_COPY = {
   dorH2post:   ' nessa situação.',
   dorSub:      'Negócios imobiliários envolvem valores altos e riscos jurídicos que nem sempre são visíveis. Uma orientação certa muda o resultado.',
   midCtaEyebrow: 'Não espere o problema crescer',
+  midCtaTitle:        'Se algum desses itens descreveu a sua situação,',
+  midCtaTitleItalic:  'já é hora de conversar.',
   solucaoH2pre:    'Problema imobiliário',
   solucaoH2italic: 'quase sempre',
   solucaoH2post:   ' tem o mesmo motivo: falta de orientação jurídica no momento certo.',

@@ -216,13 +216,13 @@ function LandingDesktop({ k, hl, ctaTxt, ctaShort, numbers, oab, lean, mobile: m
       {m ? (
         <MidCTAMobile
           k={k} eyebrow={SECTION_COPY.midCtaEyebrow}
-          title={<>Se você se reconheceu em três ou mais itens, <span style={{ color: k.accent, fontStyle: 'italic' }}>está na hora.</span></>}
+          title={<>{SECTION_COPY.midCtaTitle} <span style={{ color: k.accent, fontStyle: 'italic' }}>{SECTION_COPY.midCtaTitleItalic}</span></>}
           ctaText={ctaTxt}
         />
       ) : (
         <MidCTA
           k={k} variant="band" eyebrow={SECTION_COPY.midCtaEyebrow}
-          title={<>Se você se reconheceu em três ou mais itens dessa lista, <span style={{ color: k.accent, fontStyle: 'italic' }}>está na hora de conversar.</span></>}
+          title={<>{SECTION_COPY.midCtaTitle} <span style={{ color: k.accent, fontStyle: 'italic' }}>{SECTION_COPY.midCtaTitleItalic}</span></>}
           ctaText={ctaTxt}
         />
       )}
